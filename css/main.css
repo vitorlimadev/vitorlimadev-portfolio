@@ -56,16 +56,30 @@ main {
   background: linear-gradient(160deg, rgba(49, 12, 95, 0.8), rgba(41, 11, 90, 0.8), #061b64), url("../assets/bg.jpg") no-repeat;
   background-size: cover;
   background-position: top;
-  height: 90vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+main .fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
+}
+
+main .fade-in-appear {
+  opacity: 1;
 }
 
 main .content {
