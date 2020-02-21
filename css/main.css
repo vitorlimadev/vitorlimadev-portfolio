@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  color: white;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #161616;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  min-width: 768px;
+  max-width: 50vw;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo-container h1 {
+  font-size: 24px;
+}
+
+header .logo-container h4 {
+  font-size: 14px;
+  color: #626262;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+header ul li {
+  margin-left: 60px;
+}
+
+main {
+  background: linear-gradient(160deg, rgba(49, 12, 95, 0.8), rgba(41, 11, 90, 0.8), #061b64), url("../assets/bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+main .content h1 {
+  margin-top: 3vh;
+  font-size: 8vh;
+}
+
+main .content h2 {
+  font-size: 2.5vh;
+}
+
+main .content h3 {
+  margin-top: 3vh;
+  font-size: 2.5vh;
+}
+
+main .content h4 {
+  margin: 7vh 0 7vh 0;
+}
+
+main .icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+main .icons .github {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+main .icons .linkedin {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+}
+
+#portfolio {
+  background: #f1f1f1;
+  padding-bottom: 50px;
+}
+
+#portfolio .header-grid {
+  padding: 150px 0;
+  display: -ms-grid;
+  display: grid;
+  line-height: 2;
+  -ms-grid-columns: minmax(20px, 1fr) 1fr 1fr minmax(20px, 1fr);
+      grid-template-columns: minmax(20px, 1fr) 1fr 1fr minmax(20px, 1fr);
+  gap: 30px;
+}
+
+#portfolio .header-grid .sectionA {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  text-align: right;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#portfolio .header-grid .sectionB {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+}
+
+#portfolio .header-grid .sectionA h1, #portfolio .header-grid .sectionB h1 {
+  color: #161616;
+  font-size: 4vh;
+}
+
+#portfolio .container {
+  max-width: 80vw;
+  min-width: 800px;
+  margin: 0 auto;
+  background: #161616;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 2.5;
+}
+
+#portfolio .container h1 {
+  font-size: 5vh;
+}
+
+#portfolio .container h3 {
+  font-size: 2vh;
+  font-style: italic;
+}
+
+#portfolio .container p {
+  font-size: 1.7vh;
+}
+
+#portfolio .container .text-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: right;
+  padding: 40px;
+}
+
+#portfolio .container .text-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px;
+}
+
+#portfolio .container img {
+  width: 40vw;
+}
+
+footer {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 3;
+}
+
+footer p {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=main.css.map */

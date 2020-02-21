@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300&display=swap');
+
+$primary: #161616;
+$secondary: rgb(98, 98, 98);
+$gradient1: rgba(49, 12, 95, 0.8);
+$gradient2: rgba(41, 11, 90, 0.8);
+$gradient3: #061b64;
+$white: #f1f1f1;
+
+$gap: 1.5em;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  color: white;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: $primary;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
+header {
+  display: flex;
+  height: 10vh;
+  min-width: 768px;
+  max-width: 50vw;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo-container {
+    h1 {
+      font-size: 24px;
+    }
+
+    h4 {
+      font-size: 14px;
+      color: $secondary;
+    }
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      margin-left: 60px;
+    }
+  }
+}
+
+main {
+  background: linear-gradient(160deg, $gradient1, $gradient2, $gradient3), url('../assets/bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+      margin-top: 3vh;
+      font-size: 8vh;
+    }
+
+    h2 {
+      font-size: 2.5vh;
+    }
+
+    h3 {
+      margin-top: 3vh;
+      font-size: 2.5vh;
+    }
+
+    h4{
+      margin: 7vh 0 7vh 0;
+    }
+  }
+
+  .icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    .github {
+      grid-column: 2 / 3;
+    }
+
+    .linkedin {
+      grid-column: 3 / 4;
+    }
+  }
+}
+
+#portfolio {
+  background: $white;
+  padding-bottom: 50px;
+
+  .header-grid {
+    padding: 150px 0;
+    display: grid;
+    line-height: 2;
+    grid-template-columns: minmax(20px, 1fr) 1fr 1fr minmax(20px, 1fr);
+    gap: 30px;
+
+    .sectionA {
+      grid-column: 2 / 3;
+      text-align: right;
+      align-self: center;
+    }
+    
+    .sectionB {
+      grid-column: 3 / 4;
+    }
+
+    .sectionA h1, .sectionB h1 {
+      color: $primary;
+      font-size: 4vh;
+    }
+  }
+
+  .container {
+    max-width: 80vw;
+    min-width: 800px;
+    margin: 0 auto;
+    background: $primary;
+    display: flex;
+    line-height: 2.5;
+
+    
+    h1 {
+      font-size: 5vh;
+    }
+
+    h3 {
+      font-size: 2vh;
+      font-style: italic;
+    }
+
+    p {
+      font-size: 1.7vh;
+    }
+
+    .text-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: right;
+      padding: 40px;
+    }
+
+    .text-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    img {
+      width: 40vw;
+    }
+  }
+}
+
+
+footer {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 3;
+
+  p {
+    margin-top: 20px;
+  }
+}
