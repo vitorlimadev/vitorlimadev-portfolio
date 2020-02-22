@@ -106,6 +106,12 @@ main .content h3 {
 
 main .content i {
   font-size: 7vh;
+  -webkit-transition: font-size 0.2s ease-in-out;
+  transition: font-size 0.2s ease-in-out;
+}
+
+main .content i:hover {
+  font-size: 7.8vh;
 }
 
 main .icons {
@@ -174,9 +180,13 @@ main .icons .linkedin {
   line-height: 2.5;
 }
 
-#portfolio .container .btn-left {
-  padding: 0 30px;
+#portfolio .container .btn-box {
   margin-top: 40px;
+}
+
+#portfolio .container .btn-box .btn-left {
+  padding: 10px 30px;
+  margin-left: 20px;
   letter-spacing: 0.1em;
   text-align: center;
   font-size: 1.7vh;
@@ -188,13 +198,12 @@ main .icons .linkedin {
   transition: background-color 0.2s ease-in;
 }
 
-#portfolio .container .btn-left:hover {
+#portfolio .container .btn-box .btn-left:hover {
   background-color: #9518e9;
 }
 
-#portfolio .container .btn-right {
-  padding: 0 30px;
-  margin-top: 40px;
+#portfolio .container .btn-box .btn-right {
+  padding: 10px 30px;
   letter-spacing: 0.1em;
   text-align: center;
   font-size: 1.7vh;
@@ -206,7 +215,7 @@ main .icons .linkedin {
   transition: background-color 0.2s ease-in;
 }
 
-#portfolio .container .btn-right:hover {
+#portfolio .container .btn-box .btn-right:hover {
   background-color: #9518e9;
 }
 
@@ -325,17 +334,17 @@ footer a {
     font-size: 2.5vh;
     margin-bottom: 100px;
   }
-  #portfolio .container .btn-right, #portfolio .container .btn-left {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    font-size: 2.5vh;
-    margin-bottom: 50px;
-    border-radius: 20px;
-    padding: 0 60px;
-  }
   #portfolio .container .text-left, #portfolio .container .text-right {
     text-align: center;
+  }
+  #portfolio .container .btn-box .btn-right, #portfolio .container .btn-box .btn-left {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 2vh;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    padding: 25px 45px;
   }
   #portfolio .container .d-mob-none {
     display: none;
@@ -345,12 +354,6 @@ footer a {
   }
   #portfolio .m-top-0 {
     margin-top: 0;
-  }
-}
-
-@media (max-width: 450px) {
-  #portfolio .container p {
-    font-size: 10vh;
   }
 }
 /*# sourceMappingURL=main.css.map */

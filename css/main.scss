@@ -91,6 +91,12 @@ main {
 
     i{
       font-size: 7vh;
+
+      transition: font-size 0.2s ease-in-out;
+
+      &:hover {
+        font-size: 7.8vh;
+      }
     }
   }
 
@@ -143,35 +149,37 @@ main {
     display: flex;
     line-height: 2.5;
 
-    .btn-left {
-      padding: 0 30px;
+    .btn-box {
       margin-top: 40px;
-      letter-spacing: 0.1em;
-      text-align: center;
-      font-size: 1.7vh;
-      border-radius: 4px;
-      background-color: $btn;
-      align-self: flex-end;
-      transition: background-color 0.2s ease-in;
-
-      &:hover {
-        background-color: #9518e9;
+      .btn-left {
+        padding: 10px 30px;
+        margin-left: 20px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        font-size: 1.7vh;
+        border-radius: 4px;
+        background-color: $btn;
+        align-self: flex-end;
+        transition: background-color 0.2s ease-in;
+  
+        &:hover {
+          background-color: #9518e9;
+        }
       }
-    }
-
-    .btn-right {
-      padding: 0 30px;
-      margin-top: 40px;
-      letter-spacing: 0.1em;
-      text-align: center;
-      font-size: 1.7vh;
-      border-radius: 4px;
-      background-color: $btn;
-      align-self: flex-start;
-      transition: background-color 0.2s ease-in;
-
-      &:hover {
-        background-color: #9518e9;
+  
+      .btn-right {
+        padding: 10px 30px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        font-size: 1.7vh;
+        border-radius: 4px;
+        background-color: $btn;
+        align-self: flex-start;
+        transition: background-color 0.2s ease-in;
+  
+        &:hover {
+          background-color: #9518e9;
+        }
       }
     }
 
@@ -277,16 +285,18 @@ footer {
         margin-bottom: 100px;
       }
 
-      .btn-right, .btn-left {
-        align-self: center;
-        font-size: 2.5vh;
-        margin-bottom: 50px;
-        border-radius: 20px;
-        padding: 0 60px;
-      }
-
       .text-left, .text-right {
         text-align: center;
+      }
+
+      .btn-box {
+        .btn-right, .btn-left {
+          align-items: center;
+          font-size: 2vh;
+          margin-bottom: 60px;
+          border-radius: 10px;
+          padding: 25px 45px;
+        }
       }
 
       .d-mob-none {
@@ -302,14 +312,4 @@ footer {
       margin-top: 0;
     }
   }
-}
-
-@media (max-width: 450px) {
-  #portfolio {
-    .container {
-      p {
-        font-size: 10vh;
-      }
-    }
-  }  
 }
