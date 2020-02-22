@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+	<title>vitorlimadev - Contact</title>
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header>
+		<div class="logo-container">
+			<a href="./index.html">
+				<h1>vitorlimadev</h1>
+				<h4 class="logo">UI/UX developer</h4>
+			</a>
+		</div>
+
+		<nav>
+			<ul>
+				<li class="home-btn"><a href="./index.html">Home</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Form -->
+	<section id="contact">
+		<div class="box">
+			<h1 class="text-thin">Contact</h1>
+			<p><em>Let's build a new home for your website.</em></p>
+			<p style="margin-top: 4vh"><em><a href="mailto:vitorlimadev@outlook.com">vitorlimadev@outlook.com</a></em></p>
+			<p><em>+55 22 996188515</em></p>
+
+			<div class="icons">
+				<a href="#" class="github">
+					<i class="fab fa-github"></i>
+				</a>
+				<a href="#" class="linkedin">
+					<i class="fab fa-linkedin"></i>
+				</a>
+			</div>
+
+			<form action="POST" name="contact" data-netlify="true">
+
+				<input type="text" placeholder="Name" name="name" />
+
+				<input type="email" placeholder="Email" name="email" />
+
+				<input type="text" placeholder="Subjetct" name="subject" class="subject" />
+
+				<textarea name="message" placeholder="Message"></textarea>
+
+				<div class="robot" data-netlify-recaptcha="true"></div>
+
+				<button type="submit">Send</button>
+
+			</form>
+		</div>
+	</section>
+
+
+
+
+	<footer>
+		<a href="/">Home</a>
+		<a href="/">Contact</a>
+		<p>vitorlimadev© - All rights reserved.</p>
+	</footer>
+
+
+
+
+
+
+
+	<script src="https://kit.fontawesome.com/7d379cc0b7.js" crossorigin="anonymous"></script>
+	<script src="./js/transitions.js"></script>
+</body>
+
+</html>

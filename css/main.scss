@@ -16,6 +16,7 @@ $gap: 1.5em;
   font-family: Roboto, sans-serif;
   color: white;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 
@@ -89,7 +90,7 @@ main {
       font-size: 2.5vh;
     }
 
-    i{
+    i {
       font-size: 7vh;
 
       transition: font-size 0.2s ease-in-out;
@@ -220,6 +221,104 @@ main {
   }
 }
 
+// Contact
+#contact {
+  height: 90vh;
+  background: linear-gradient(#50505050), url('../assets/contact-bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: center;
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    background-color: $white;
+    width: 45%;
+    height: 100%;
+    opacity: 0.9;
+
+    h1 {
+      font-size: 8vh;
+    }
+
+    .github:first-child {
+      margin-right: 30px;
+    }
+
+    i {
+      margin: 4vh 0;
+      font-size: 4vh;
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        color: $gradient3;
+      }
+    }
+
+    a {
+      color: $primary;
+
+      &:hover {
+        color: $gradient3;
+      }
+    }
+
+    h1, h2, em, i, form {
+      color: $primary
+    }
+
+    form {
+      input, textarea {
+        color: $primary;
+        border: 1px solid rgb(179, 179, 179);
+      }
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 4fr 1fr 1fr;
+      gap: 10px;
+
+      input {
+        height: 100%;
+        width: 100%;
+        padding: 2vh;
+      }
+
+      .subject, textarea {
+        grid-column: 1 / 3;
+        width: 100%;
+      }
+
+      textarea {
+        resize: initial;
+        padding: 2vh;
+      }
+
+      button {
+        font-size: 2vh;
+        grid-column: 1 / 3;
+        width: 100%;
+        border: none;
+        border-radius: 4px;
+        background-color: $btn;
+        transition: background-color 0.2s ease-in;
+  
+        &:hover {
+          background-color: #9518e9;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
 
 footer {
   padding: 50px 0;
@@ -243,7 +342,7 @@ footer {
 }
 
 
-//JS classes
+// JS classes
 .fade-in {
   opacity: 0;
   transition: opacity 500ms ease-in;
@@ -253,7 +352,7 @@ footer {
   opacity: 1;
 }
 
-//Media Queries
+// Media Queries
 @media (max-device-width: 1200px) {
   header {
     .home-btn {
@@ -309,6 +408,28 @@ footer {
 
     .m-top-0 {
       margin-top: 0;
+    }
+  }
+
+  #contact {
+    .box {
+      width: 100%;
+
+      em {
+        font-size: 2vh;
+      }
+
+      i {
+        font-size: 7vh;
+        margin: 4vh 2vh;
+      }
+
+      form {
+        input, textarea {
+          font-size: 2vh;
+          border: 2px solid rgb(179, 179, 179);
+        }
+      }
     }
   }
 }
