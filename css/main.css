@@ -338,13 +338,10 @@ footer a {
     text-align: center;
   }
   #portfolio .container .btn-box .btn-right, #portfolio .container .btn-box .btn-left {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    display: block;
     font-size: 2vh;
     margin-bottom: 60px;
     border-radius: 10px;
-    padding: 25px 45px;
   }
   #portfolio .container .d-mob-none {
     display: none;

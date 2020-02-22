@@ -291,11 +291,10 @@ footer {
 
       .btn-box {
         .btn-right, .btn-left {
-          align-items: center;
+          display: block;
           font-size: 2vh;
           margin-bottom: 60px;
           border-radius: 10px;
-          padding: 25px 45px;
         }
       }
 
