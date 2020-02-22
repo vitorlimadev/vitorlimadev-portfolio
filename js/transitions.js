@@ -1,14 +1,18 @@
 const scrollFadeItens = document.querySelectorAll('.fade-in');
 
-const options = {};
+const options = {
+  threshold: 0.1
+};
 
 const scrollObserver = new IntersectionObserver((entries, scrollObserver) => {
   entries.forEach(entry => {
     if (!entry.isIntersecting) {
       return;
+    } else {
+      console.log(entry.target);
+      entry.target.classList.add('appear');
     }
-    console.log(entry.target);
-    entry.target.classList.add('fade-in-appear');
+
   });
 }, options);
 
