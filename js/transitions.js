@@ -9,7 +9,7 @@ const scrollObserver = new IntersectionObserver((entries, scrollObserver) => {
     if (!entry.isIntersecting) {
       return;
     } else {
-      console.log(entry.target);
+      // console.log(entry.target);
       entry.target.classList.add('appear');
     }
 
